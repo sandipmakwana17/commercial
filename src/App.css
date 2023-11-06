@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* Home.js ...................................................*/
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home-background{
+  background-image: url(../public/image/home-image/header-background.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
+}
+  
+
+.home-background h1{
+  font-weight: 700;
+  margin-left: 100px;
+
+}
+.home-background .btn{
+  width: 150px;
+  margin-top: 25px;
+  margin-left: 100px;
+
 }
 
-.App-link {
-  color: #61dafb;
+@media only screen and (max-width: 600px) {
+  .home-background {
+    height: 450px;
+  }
+  .home-background h1{
+    font-weight: 400;
+    margin-left: 20px;
+  }
+  .home-background .btn{
+    width: 105px;
+    margin-left: 20px;
+    margin-top: 5px;
+
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Home.js......... fashion box */
+
+.fation-box{
+  opacity: 1;  
+}
+.fation-box:hover{
+  opacity: 0.8;
+}
+@media only screen and (max-width: 600px) {
+  .fation-box{
+    width: 100px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+/* ViewMore................. */
+
+.view-more-1{
+  background-image: url(/public/image/home-image/ViewMore-1.png);
+  height: 470px;
+  text-align: center;
+  
+}
+.view-more-2{
+  background-image: url(/public/image/home-image/ViewMore-2.png);
+  height: 470px;
+  text-align: center;
+  
+}
+
+
+
+
+/* Navbar.js ...................................................*/
+
+.navbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  z-index: 1;
+
 }
